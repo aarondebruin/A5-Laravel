@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Post;
 
 class PostsController extends Controller
 {
@@ -13,7 +14,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view('epk.dashboard');
+        
+        return view('index')->with('posts', Post::orderBy('updated_at', 'DESC')->get());
     }
 
     /**
