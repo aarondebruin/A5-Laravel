@@ -68,7 +68,7 @@
                               
                                     <div class="p-2">
 
-                                  <a href="{{ url('dashboard') }}" class="btn btn-primary">Primary link</a>
+                                  <a href="{{ url('dashboard') }}" class="btn btn-primary">Dashboard</a>
 
                                 </div>
                                 <div class="p-2">
