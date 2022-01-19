@@ -21,8 +21,10 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::resource('/dashboard', PostsController::class);
-
 Route::get('/', [PagesController::class, 'index']);
+
+ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('/', PostsController::class);
+
+Route::get('dashboard', [PagesController::class, 'dashboard']);
