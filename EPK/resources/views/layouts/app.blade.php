@@ -67,9 +67,9 @@
                                     </div>
                               
                                     <div class="p-2">
-                                  <button type="button" class="btn btn-primary" href="{{ url('dashboard') }}"> 
-                                    Dashboard
-                                  </button>
+
+                                  <a href="{{ url('dashboard') }}" class="btn btn-primary">Primary link</a>
+
                                 </div>
                                 <div class="p-2">
                                   <button type="button" class="btn btn-primary" href=href="//"
@@ -79,7 +79,7 @@
                                     
                                   </button>
                                 </div>
-                                </div>
+                                </div> 
 
 
                                 {{-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
