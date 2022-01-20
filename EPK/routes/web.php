@@ -28,3 +28,7 @@ Route::get('/', [PagesController::class, 'index']);
 Route::resource('/', PostsController::class);
 
 Route::get('dashboard', [PagesController::class, 'dashboard']);
+
+Route::get('store',[PostsController::class , 'store']);
+
+Route::post('/create',[PostsController::class , 'store'])->name('posts');
