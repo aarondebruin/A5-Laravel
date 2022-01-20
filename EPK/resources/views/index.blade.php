@@ -1,3 +1,9 @@
+<html>
+<head>
+  
+  <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+</head>
+  <body>  
 <div class="container">
     @extends('layouts.app')
 
@@ -22,3 +28,5 @@
 @endsection
 
 </div>
+</body>
+</html>
