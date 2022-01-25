@@ -65,12 +65,13 @@ class PostsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  string  $slug
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+        return view('epk.show')
+        ->with('post', Post::where('slug', $slug)->first());
     }
 
     /**
@@ -79,9 +80,10 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        //
+        return view('epk.edit')
+        ->with('post', Post::where('slug', $slug)->first())
     }
 
     /**
