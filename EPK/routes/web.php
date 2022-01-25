@@ -33,7 +33,7 @@ Route::get('store',[PostsController::class , 'store']);
 
 Route::get('show',[PostsController::class , 'show']);
 
-Route::get('edit',[PostsController::class , 'edit']);
+Route::PUT('edit',[PostsController::class , 'edit']);
 
 
 Route::post('/create',[PostsController::class , 'store'])->name('posts');

@@ -16,7 +16,7 @@
           <h5 class="card-title">{{ $post->title }}</h5>
           <p class="card-text">{{ $post->description }}</p>
           <strong> {{ $post->user->name }} </strong>
-          <p> Aangemaakt op {{ date('jS M Y', strtotime($post->updated_at)) }}
+           Aangemaakt op {{ date('jS M Y', strtotime($post->updated_at)) }}
             {{-- Tijdelijke br's --}}
             <br>
             <br>
@@ -27,6 +27,12 @@
             <a href="/EPK/{{ $post->slug }}/edit">
               Edit 
             </a> 
+          </p>
+
+          <p>
+            <form action="/EPK/{{ $post->slug }}" method="POSt">
+
+            </form>
           </p>
           @endif
         </div>
