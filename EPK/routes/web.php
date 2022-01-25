@@ -33,6 +33,9 @@ Route::get('store',[PostsController::class , 'store']);
 
 Route::get('show',[PostsController::class , 'show']);
 
+Route::get('edit',[PostsController::class , 'edit']);
+
+
 Route::post('/create',[PostsController::class , 'store'])->name('posts');
 
 Route::resource('/EPK', PostsController::class);

@@ -21,6 +21,14 @@
             <br>
             <br>
           <a href="/EPK/{{ $post->slug }}" class="btn btn-primary">Lees meer</a>
+
+          @if (isset(Auth::user()->id) && Auth::user()->id ==$post->user_id)
+          <p> 
+            <a href="/EPK/{{ $post->slug }}/edit">
+              Edit 
+            </a> 
+          </p>
+          @endif
         </div>
       </div>
     </div>

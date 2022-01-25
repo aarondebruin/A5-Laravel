@@ -83,7 +83,7 @@ class PostsController extends Controller
     public function edit($slug)
     {
         return view('epk.edit')
-        ->with('post', Post::where('slug', $slug)->first())
+        ->with('post', Post::where('slug', $slug)->first());
     }
 
     /**
