@@ -1,2 +1,14 @@
 .container{ 
 }
+.searchbar{
+    border: 1px solid blue;
+    border-radius:12px;
+    padding: 5px;
+}
+.imgpic{
+    max-width: 450px;
+    max-height: 350px;
+}
+.edtknp{
+    color:blue;
+}
