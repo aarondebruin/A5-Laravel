@@ -1,2 +1,6 @@
 .container{ 
 }
+.imgpic{
+    max-width: 450px;
+    max-height: 350px;
+}
