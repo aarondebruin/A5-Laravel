@@ -29,14 +29,17 @@ Route::resource('/', PostsController::class);
 
 Route::get('dashboard', [PagesController::class, 'dashboard']);
 
-Route::get('store',[PostsController::class , 'store']);
+// Route::get('store',[PostsController::class , 'store']);
 
-Route::get('show',[PostsController::class , 'show']);
+// Route::get('show',[PostsController::class , 'show']);
 
-Route::PUT('edit',[PostsController::class , 'edit']);
+// Route::PUT('edit',[PostsController::class , 'edit']);
 
 
 Route::post('/create',[PostsController::class , 'store'])->name('posts');
 
 Route::resource('/EPK', PostsController::class);
+
+Route::get('/search', [App\Http\Controllers\HomeController::class, 'search'])->name('EPK.search');
+
 
