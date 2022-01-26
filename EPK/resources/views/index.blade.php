@@ -8,6 +8,15 @@
     @extends('layouts.app')
 
     @section('content')
+
+      <div class="container">
+        <form action="{{ route('EPK.search') }}" method="GET" >
+        <input class="form-control" type="search" name="query">
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+      
+
     @foreach ($posts as $post)
     <div class="col-lg-4 col-md-4 col-sm-4 container justify-content-center">
     <div class="card d-flex justify-content-center" style="width: 150%;">
