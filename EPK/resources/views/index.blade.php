@@ -29,11 +29,13 @@
             </a> 
           </p>
 
-          <p>
-            <form action="/EPK/{{ $post->slug }}" method="POSt">
-
+          <p> 
+            <form action="/EPK/{{ $post->slug }}" method="POST"> @csrf @method('delete')
+              <button class="btn btn-danger"> Delete  
+              </button> 
             </form>
           </p>
+
           @endif
         </div>
       </div>
