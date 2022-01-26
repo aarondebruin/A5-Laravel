@@ -8,21 +8,21 @@
 
     
         <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
-          <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Title..">
+          <label for="exampleFormControlInput1">Band name</label>
+          <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Naam..">
         </div>
        
     
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Description</label>
-          <textarea name="description" placeholder="Description..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="exampleFormControlTextarea1">Beschrijving</label>
+          <textarea name="description" placeholder="Beschrijving..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
 
         <div class="form-group">
             <input name="image" type="file" class="form-control-file">
           </div>
       
-          <button class="btn btn-primary" type="submit">Button</button>
+          <button class="btn btn-primary" type="submit">Create</button>
 
   </form>
 </div>

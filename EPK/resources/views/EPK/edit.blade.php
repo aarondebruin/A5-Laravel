@@ -10,13 +10,13 @@
         <h1> Edit Band </h1>
         <br>
         <div class="form-group">
-          <label for="exampleFormControlInput1">Email address</label>
+          <label for="exampleFormControlInput1">Band name</label>
           <input type="text" name="title" class="form-control" id="exampleFormControlInput1" value="{{ $post->title }}">
         </div>
        
     
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Description</label>
+          <label for="exampleFormControlTextarea1">Beschrijving</label>
           <textarea name="description" placeholder="Description..." class="form-control" id="exampleFormControlTextarea1" rows="3">{{ $post->description }}</textarea>
         </div>
 
