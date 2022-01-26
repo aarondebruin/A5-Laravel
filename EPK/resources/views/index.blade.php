@@ -32,9 +32,19 @@
             <br>
           <a href="/EPK/{{ $post->slug }}" class="btn btn-outline-success">Lees meer</a>
 
+          <br>
+          <br>
+
           @if (isset(Auth::user()->id) && Auth::user()->id ==$post->user_id)
+
           <p style="margin-left:90%;"> 
             <a class="edtknp" href="/EPK/{{ $post->slug }}/edit">Edit</a> 
+
+          <p> 
+            <a href="/EPK/{{ $post->slug }}/edit" class="btn btn-primary" >
+              Edit 
+            </a> 
+
           </p>
           <p> 
             <form action="/EPK/{{ $post->slug }}" method="POST"> @csrf @method('delete')
