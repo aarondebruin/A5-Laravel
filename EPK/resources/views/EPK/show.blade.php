@@ -7,6 +7,7 @@
     <p> {{  $post->description }} </p>
     <p> Gemaakt door {{ $post->user->name }} </p>
     <p> Aangemaakt op {{ date('jS M Y', strtotime($post->updated_at)) }}
+    <x-embed url="{{ $post->youtube_url }}" />
 </div>
 
 

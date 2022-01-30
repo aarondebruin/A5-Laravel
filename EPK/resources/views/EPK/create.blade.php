@@ -19,6 +19,11 @@
         </div>
 
         <div class="form-group">
+          <label for="exampleFormControlTextarea1">Youtube URL</label>
+          <textarea name="youtube_url" placeholder="youtube url..." class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+        </div>
+
+        <div class="form-group">
             <input name="image" type="file" class="form-control-file">
           </div>
       
