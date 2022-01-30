@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use Cviebrock\EloquentSluggable\Services\SlugService;
+use BenSampo\Embed\Rules\EmbeddableUrl;
+use BenSampo\Embed\Services\YouTube;
+
+
 
 
 class PostsController extends Controller
@@ -61,7 +65,8 @@ class PostsController extends Controller
             'description' => $request->input('description'),
             'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
             'image_path' => $newImageName,
-            'user_id' => auth()->user()->id
+            'user_id' => auth()->user()->id,
+            'youtube_url' => $request->input('youtube_url')
 
         ]);
         return redirect('/create')->with('message', 'Je band is gepubliceerd');
