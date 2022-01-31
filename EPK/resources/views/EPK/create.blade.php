@@ -19,9 +19,25 @@
         </div>
 
         <div class="form-group">
+          <label for="exampleFormControlTextarea1">Biografie</label>
+          <textarea name="biography" placeholder="Biografie..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
           <label for="exampleFormControlTextarea1">Youtube URL</label>
           <textarea name="youtube_url" placeholder="youtube url..." class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
         </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Youtube URL 2</label>
+          <textarea name="youtube_url2" placeholder="youtube url..." class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Youtube URL 3</label>
+          <textarea name="youtube_url3" placeholder="youtube url..." class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+        </div>
+
 
         <div class="form-group">
             <input name="image" type="file" class="form-control-file">
