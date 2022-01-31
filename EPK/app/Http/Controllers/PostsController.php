@@ -66,7 +66,10 @@ class PostsController extends Controller
             'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
             'image_path' => $newImageName,
             'user_id' => auth()->user()->id,
-            'youtube_url' => $request->input('youtube_url')
+            'youtube_url' => $request->input('youtube_url'),
+            'youtube_url2' => $request->input('youtube_url2'),
+            'youtube_url3' => $request->input('youtube_url3'),
+            'biography' => $request->input('biography')
 
         ]);
         return redirect('/create')->with('message', 'Je band is gepubliceerd');
