@@ -2,6 +2,8 @@
 
 @section('content')
 
+<link href="{{ asset('css/main.css') }}" rel="stylesheet">
+
 
 <div class="container">
     <h1> {{ $post->title }} </h1>
