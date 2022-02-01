@@ -10,7 +10,6 @@
     @section('content')
 
     <div class="container searchbar">
-      <p>Search!</p>
       <form action="{{ route('EPK.search') }}" method="GET" >
         <input class="form-control" type="search" name="query">
         <button type="submit" class="btn btn-primary">Search</button>
